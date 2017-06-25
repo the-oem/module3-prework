@@ -6,12 +6,12 @@ const Main = React.createClass({
     return (
       <div>
         <h1>
-          <Link to='/'>Whiskeygram</Link>
+          <Link to="/">Whiskeygram</Link>
         </h1>
-        {React.cloneElement(this.props.children, this.props)}
+        {React.cloneElement({...this.props}.children, {...this.props})}
       </div>
     )
   }
 });
 
-export default Main
+export default Main;
